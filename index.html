@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- mobile responsiveness -->
+
+        <nav class="mobile-navbar" id="mobile-navbar">
+            <div class="mobile-container">
+                <p class="mobile-logo">My Brand</p>
+                <button onclick="showMenuBar()" class="cancel-toggle" id="cancel-toggle">&#10060;</button>
+            </div>
+                <ul class="mobile-nav-link">
+                    <a href="#Home"><li>Home</li></a>
+                    <a href="#Features"><li>Features</li></a>
+                    <a href="#About"><li>About</li></a>
+                    <a href="#Contact"><li>Contact</li></a>
+                </ul>
+        </nav>
+
+    <!-- The navigation bar -->
+    <header>
+        <nav class="navbar">
+            <p class="logo">My Brand</p>
+            <ul class="nav-link">
+                <a href="#Home"><li>Home</li></a>
+                <a href="#Features"><li>Features</li></a>
+                <a href="#About"><li>About</li></a>
+                <a href="#Contact"><li>Contact</li></a>
+            </ul>
+
+            <div onclick="showMenuBar()"  class="menu-toggle" id="menu-toggle">&#9776;</div>
+        </nav>
+    </header>
+
+    <!-- The hero section -->
+     <section id="Home" class="Hero">
+        <div id="welcome">WELCOME</div>
+        <h1 id="ani-1">Build Moderm Responsive Websites</h1>
+        <p id="ani-2">Learn to create beautiful, mobile-friendly web pages with HTML, CSS, and JavaScript.</p>
+        <a href="#Features"><button class="btn" id="ani-3">Get Started</button></a>
+    </section>
+
+     <!-- features section -->
+      <section id="Features" class="features">
+          <h2>Features</h2>
+          <div class="features-flex">
+            <div class="feature">
+                <span class="icon">&#127912;</span>
+                <h2>Moderm</h2>
+                <p>Beautiful design with smooth scrolling and animations.</p>
+            </div>
+            <div class="feature">
+                 <span class="icon">&#128241;&#128187;</span>
+                <h2>Fully Responsive</h2>
+                <p>Looks great on mobile, tablet, and desktop devices.</p>
+            </div>
+            <div class="feature">
+                 <span class="icon">&#9889;</span>
+                <h2>Fast & lightweight</h2>
+                <p>Optimized performance with clean and lightweight code.</p>
+            </div>
+        </div>
+        <div id="feature">
+             <span class="icon">&#129309;</span>
+            <h2>User-Friendly Interface</h2>
+            <p>It designed to be simple and intuitive, so users can navigate easily without confusion.</p>
+        </div>
+
+
+        <!-- About -->
+         <div id="About" class="About">
+            <h1>About</h1>
+            <p>I'm passionate about building websites that look amazing and perform well on every device.</p>
+         </div>
+      </section>
+
+      <!-- footer -->
+       <footer id="Contact" class="footer">
+        <div class="footer-container">
+            <p>&#128187; Developing with passion during my <strong>Frontend Internship</strong> at <span>Codveda.</span> Thank you <span>Codvade</span> for accepting me into your internship program and helping me grow as a developer.</p>
+            <p>&copy; 2025 Codvade Internship Project | All Rights Reserved</p>
+        </div>
+       </footer>
+       <script defer src="main.js"></script>
+</body>
+</html>
